@@ -9,7 +9,7 @@ COPY . .
 
 # Install app dependencies
 COPY package*.json ./
-RUN npm install
+RUN npm install -g npm@10.2.3
 
 #Start App
 CMD ["npm", "start"]
